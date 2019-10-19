@@ -1,0 +1,38 @@
+individual project items  :
+	project name
+	project description
+	project start date
+	project end date
+	
+	total time spent on project
+	average time spent on project per week and per each day
+	average time spent on project per month
+	average time spent on project per hour of the day
+
+total work items :
+	total time spent on work
+	average time spent on work per week and per each day
+	average time spent on work per month
+	average time spent on work per hour of the day
+
+	
+entry items for session db :
+	start day name
+	start day
+	start month
+	start year
+	start hour
+	start minute
+	start second
+	
+	end day name
+	end day
+	end month
+	end year
+	end hour
+	end minute
+	end second
+	
+	duration
+	
+	project name

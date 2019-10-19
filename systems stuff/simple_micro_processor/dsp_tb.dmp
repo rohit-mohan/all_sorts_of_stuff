@@ -1,0 +1,380 @@
+$date
+	Sat Jan  9 17:32:44 2016
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module dsp_tb $end
+$var wire 4 ! dsp_out [3:0] $end
+$var reg 1 " clk $end
+$var reg 4 # imm_val [3:0] $end
+$var reg 4 $ mem_addr [3:0] $end
+$var reg 3 % opcode [2:0] $end
+$var reg 1 & rstn $end
+$scope module d0 $end
+$var wire 1 " clk $end
+$var wire 1 ' cout $end
+$var wire 4 ( imm_val [3:0] $end
+$var wire 4 ) mem_addr [3:0] $end
+$var wire 3 * opcode [2:0] $end
+$var wire 1 & rstn $end
+$var wire 4 + val2alu [3:0] $end
+$var wire 1 , rwn2mem $end
+$var wire 3 - opsel2alu [2:0] $end
+$var wire 4 . dsp_out [3:0] $end
+$var wire 4 / dataout [3:0] $end
+$var wire 1 0 csn2mem $end
+$var wire 1 1 cin2alu $end
+$var wire 4 2 addr2mem [3:0] $end
+$scope module a0 $end
+$var wire 4 3 and_ans [3:0] $end
+$var wire 1 " clk $end
+$var wire 1 ' cout $end
+$var wire 4 4 not_ans [3:0] $end
+$var wire 4 5 or_ans [3:0] $end
+$var wire 1 & rstn $end
+$var wire 4 6 xor_ans [3:0] $end
+$var wire 4 7 sub_ans [3:0] $end
+$var wire 3 8 instr [2:0] $end
+$var wire 4 9 in1 [3:0] $end
+$var wire 4 : in0 [3:0] $end
+$var wire 4 ; dec_ans [3:0] $end
+$var wire 1 1 cin $end
+$var wire 4 < add_ans [3:0] $end
+$var reg 1 = reg_cin $end
+$var reg 4 > reg_in0 [3:0] $end
+$var reg 4 ? reg_in1 [3:0] $end
+$var reg 3 @ reg_instr [2:0] $end
+$var reg 4 A reg_out [3:0] $end
+$upscope $end
+$scope module id0 $end
+$var wire 1 " clk $end
+$var wire 4 B imm_val [3:0] $end
+$var wire 4 C mem_addr [3:0] $end
+$var wire 3 D opcode [2:0] $end
+$var wire 1 & rstn $end
+$var reg 1 1 carryin $end
+$var reg 1 E cin $end
+$var reg 1 0 csn $end
+$var reg 3 F opsel [2:0] $end
+$var reg 4 G reg_addr [3:0] $end
+$var reg 4 H reg_operand [3:0] $end
+$var reg 3 I reg_opsel [2:0] $end
+$var reg 1 , rwn $end
+$var reg 2 J state [1:0] $end
+$upscope $end
+$scope module r0 $end
+$var wire 4 K addr [3:0] $end
+$var wire 1 0 csn $end
+$var wire 4 L din [3:0] $end
+$var wire 1 , rwn $end
+$var wire 4 M dout [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz M
+b0 L
+b0 K
+b0 J
+b0 I
+b0 H
+b0 G
+bx F
+xE
+bx D
+bx C
+bx B
+b0 A
+b0 @
+b0 ?
+b0 >
+0=
+b0 <
+b1111 ;
+b0 :
+bz 9
+b0 8
+b1111 7
+b0 6
+b0 5
+b1111 4
+b0 3
+b0 2
+01
+10
+bz /
+b0 .
+b0 -
+1,
+b0 +
+bx *
+bx )
+bx (
+z'
+0&
+bx %
+bx $
+bx #
+0"
+b0 !
+$end
+#5
+bx /
+bx 9
+bx M
+00
+b100 +
+b100 :
+b100 H
+0E
+b0 F
+b1 J
+bx 4
+bx 6
+bx 5
+bx 7
+bx <
+bx ;
+bz ?
+b100 #
+b100 (
+b100 B
+b0 $
+b0 )
+b0 C
+b0 %
+b0 *
+b0 D
+1&
+1"
+#10
+0"
+#15
+b10 J
+b0x00 3
+bx1xx 5
+b100 >
+bx ?
+1"
+#20
+0"
+#25
+bz /
+bz 9
+bz M
+0,
+b100 !
+b100 .
+b100 A
+b100 L
+b11 J
+1"
+#30
+0"
+#35
+b100 /
+b100 9
+b100 M
+1,
+b1 -
+b1 8
+b1 I
+b110 +
+b110 :
+b110 H
+b1 J
+b1 F
+bz ?
+1"
+b110 #
+b110 (
+b110 B
+b1 %
+b1 *
+b1 D
+#40
+0"
+#45
+b1010 !
+b1010 .
+b1010 A
+b1010 L
+b10 J
+b1011 4
+b100 3
+b10 6
+b110 5
+b1 @
+b110 >
+b1101 7
+b1010 <
+b11 ;
+b100 ?
+1"
+#50
+0"
+#55
+bz /
+bz 9
+bz M
+0,
+b11 J
+1"
+#60
+0"
+#65
+bx /
+bx 9
+bx M
+1,
+b0 -
+b0 8
+b0 I
+b111 +
+b111 :
+b111 H
+b1 2
+b1 G
+b1 K
+bx !
+bx .
+bx A
+bx L
+b1 J
+b0 F
+bx 4
+b0xx0 3
+bx 6
+bx11x 5
+bx 7
+bx <
+bx ;
+bz ?
+1"
+b111 #
+b111 (
+b111 B
+b1 $
+b1 )
+b1 C
+b0 %
+b0 *
+b0 D
+#70
+0"
+#75
+b10 J
+b110 !
+b110 .
+b110 A
+b110 L
+b0xxx 3
+bx111 5
+b0 @
+b111 >
+bx ?
+1"
+#80
+0"
+#85
+bz /
+bz 9
+bz M
+0,
+b111 !
+b111 .
+b111 A
+b111 L
+b11 J
+1"
+#90
+0"
+#95
+b111 /
+b111 9
+b111 M
+1,
+11
+b10 -
+b10 8
+b10 I
+b101 +
+b101 :
+b101 H
+b1 J
+1E
+b10 F
+bz ?
+1"
+b101 #
+b101 (
+b101 B
+b10 %
+b10 *
+b10 D
+#100
+0"
+#105
+b0 !
+b0 .
+b0 A
+b0 L
+b10 J
+b1000 4
+b101 3
+b10 6
+b111 5
+1=
+b10 @
+b101 >
+b10 7
+b1101 <
+b111 ;
+b111 ?
+1"
+#110
+0"
+#115
+bz /
+bz 9
+bz M
+0,
+b11 J
+b10 !
+b10 .
+b10 A
+b10 L
+1"
+#120
+0"
+#125
+bx /
+bx 9
+bx M
+1,
+bx !
+bx .
+bx A
+bx L
+b1 J
+bx 4
+b0x0x 3
+bx 6
+bx1x1 5
+bx 7
+bx <
+bx ;
+bz ?
+1"
+#130
+0"
+#135
+b10 J
+bx ?
+1"

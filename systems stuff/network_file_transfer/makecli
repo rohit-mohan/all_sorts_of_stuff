@@ -1,0 +1,27 @@
+CC=gcc
+CF=-c
+SOURCE=client.c 
+OBJ=$(SOURCE:.c=.o)
+TARGET=client
+LINKFLG=-lpthread
+
+all : begin $(TARGET) end
+
+$(TARGET) : $(OBJ)
+	@$(CC) $(OBJ) -o $(TARGET) $(LINKFLG)
+
+$(OBJ):%.o : %.c
+	@$(CC) $(CF) $< 
+
+begin :
+	@echo begining execution
+
+end :
+	@echo execution complete. $(TARGET) created 
+
+clean : 
+	@rm -f $(OBJ) $(TARGET)
+	@rm -f *.*.swp
+	@rm -f *.*~
+
+.PHONY : clean

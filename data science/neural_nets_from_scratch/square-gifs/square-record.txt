@@ -1,0 +1,2 @@
+dest : 001.gif, num_epochs : 10000, iter_per_epoch : 10, hidden_layers : 2, units_per_layer : 15, lr : 0.1
+dest : 002.gif, num_epochs : 1000, iter_per_epoch : 10, hidden_layers : 2, units_per_layer : 15, lr : 0.01
